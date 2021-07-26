@@ -26,10 +26,7 @@ jobs:
       run: |
         python -m venv venv
         source venv/bin/activate
-    - name: UPDATE
-      run: python -m pip install --upgrade pip
-    - name: Bikin requirements
-      run: pip freeze > requirements.txt
+        
     - name: Install dependencies
       run: pip install -r requirements.txt
 
